@@ -1,0 +1,201 @@
+<?php include 'header-inner.php'; ?>
+			<div class="col-lg-3 sidebar">
+				<ul class="nav nav-stacked">
+					<li class="active"><a href="news.php">News</a></li>
+					<li><a href="events.php">Events</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-9">
+				<h1>News</h1>
+				<table class="dgGrid" cellspacing="0" cellpadding="0" id="ctl06_W3345_dg" style="border-collapse:collapse;">
+	<tbody><tr class="dgPager" align="right">
+		<td colspan="2"><span><span class="floatNear">Results <b>1</b> to <b>20</b> of 24 results found</span>&nbsp;Pages:&nbsp;</span><span>1</span>&nbsp;<a href="javascript:__doPostBack('ctl06$W3345$dg$ctl01$ctl02','')">2</a></td>
+	</tr><tr class="dgMainGroup">
+		<td colspan="2"><h2>Latest News<h2></td>
+	</tr><tr class="dgHeader">
+		<td class="EventTypeOther">Date</td><td class="EventTypeOther"></td>
+	</tr><tr class="dgSep">
+		<td valign="top" colspan="2" style="width:200px;">November 2013</td>
+	</tr><tr class="dgItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_0" style="margin:2 2 2 2">25 November 2013<br></div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_0" style="margin:2 2 2 2">Workshop of the Network of Laboratories for the Detection and Identification of Living Modified Organisms<br><a href="/doc/?meeting=BSWS-LMO-01">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgAltItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_1" style="margin:2 2 2 2">29 November 2013</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_1" style="margin:2 2 2 2">Capacity-building workshop for the Pacific on ecosystem conservation and restoration to support achievement of the Aichi Biodiversity Targets<br><a href="/doc/?meeting=WSCBECR-PAC-01">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_2" style="margin:2 2 2 2">29 November 2013</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_2" style="margin:2 2 2 2">Sub-regional Capacity-building Workshop on the Nagoya Protocol for the Pacific<br><a href="/doc/?meeting=ABSCBW-PAC-01">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgSep">
+		<td valign="top" colspan="2" style="width:200px;">December 2013</td>
+	</tr><tr class="dgAltItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_3" style="margin:2 2 2 2">2 December 2013</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_3" style="margin:2 2 2 2">Second meeting of the second phase of the High-level Panel on the Global Assessment of Resources for Implementing the Strategic Plan for Biodiversity 2011-2020<br><a href="/doc/?meeting=HLPGAR-SP-02-02">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_4" style="margin:2 2 2 2">6 December 2013</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_4" style="margin:2 2 2 2">Regional Workshop for Latin America on the Preparation of the Fifth National Report and Indicators<br><a href="/doc/?meeting=RW5NR-LA-01">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgAltItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_5" style="margin:2 2 2 2">7 December 2013</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_5" style="margin:2 2 2 2">Sub-regional Capacity-building Workshop on the Nagoya Protocol for East, South and South-East Asia<br><a href="/doc/?meeting=ABSCBW-SEASI-01">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_6" style="margin:2 2 2 2">6 December 2013</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_6" style="margin:2 2 2 2">Second Meeting of the Expert Group on Biodiversity for Poverty Eradication and Development<br><a href="/doc/?meeting=EGM-BPED-02">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgAltItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_7" style="margin:2 2 2 2">9 December 2013</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_7" style="margin:2 2 2 2">Sustainable Ocean Initiative (SOI) Capacity-building Workshop for East, South and South-East Asia<br><a href="/doc/?meeting=CBWSOI-SEASI-01">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_8" style="margin:2 2 2 2"> 12 December 2013</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_8" style="margin:2 2 2 2">Regional Capacity-building Workshop to Address Invasive Alien Species and to Achieve Aichi Biodiversity Target 9 in the Central and Eastern Europe and Central Asia<br><a href="/doc/?meeting=CBWIAS-CEECAIS-01">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgAltItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_9" style="margin:2 2 2 2">11 December 2013</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_9" style="margin:2 2 2 2">Regional Capacity-building Workshop for Latin America and Caribbean Region on Traditional Knowledge under the CBD<br><a href="/doc/?meeting=RWCBTK-LAC-01">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_10" style="margin:2 2 2 2">14 December 2013</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_10" style="margin:2 2 2 2">Regional Workshop for Middle East and North Africa on the Preparation of the Fifth National Report<br><a href="/doc/?meeting=RW5NR-MENA-01">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgAltItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_11" style="margin:2 2 2 2">16 December 2013</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_11" style="margin:2 2 2 2">Central and Eastern Europe Regional Workshop on Mainstreaming Biosafety into National Measures<br><a href="/doc/?meeting=BSRWMB-CEE-01">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgSep">
+		<td valign="top" colspan="2" style="width:200px;">January 2014</td>
+	</tr><tr class="dgItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_12" style="margin:2 2 2 2">20 January 2014</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_12" style="margin:2 2 2 2">Workshop for Central Asia and Central and Eastern Europe on the Preparation of the Fifth National Report<br><a href="/doc/?meeting=RW5NR-CEECASI-01">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgSep">
+		<td valign="top" colspan="2" style="width:200px;">February 2014</td>
+	</tr><tr class="dgAltItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_13" style="margin:2 2 2 2">17 February 2014</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_13" style="margin:2 2 2 2">Ad Hoc Technical Expert Group Meeting on Socio-economic Considerations (Article 26 of the Cartagena Protocol on Biosafety)</div>
+            </td>
+	</tr><tr class="dgItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_14" style="margin:2 2 2 2">24 February 2014</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_14" style="margin:2 2 2 2"><b>Third meeting of the Ad Hoc Open-ended Intergovernmental Committee for the Nagoya Protocol on Access and Benefit-sharing</b><br><a href="/doc/?meeting=ICNP-03">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgAltItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_15" style="margin:2 2 2 2">25 February 2014<div class="InfoNew">New!</div></div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_15" style="margin:2 2 2 2">Expert Workshop on Underwater Noise and its Impacts on Marine and Coastal Biodiversity<br><a href="/doc/?meeting=EWUNIMCB-01">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgSep">
+		<td valign="top" colspan="2" style="width:200px;">March 2014</td>
+	</tr><tr class="dgItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_16" style="margin:2 2 2 2">3 March 2014</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_16" style="margin:2 2 2 2">Arctic Regional Workshop to Facilitate the Description of Ecologically or Biologically Significant Marine Areas (EBSAs)</div>
+            </td>
+	</tr><tr class="dgSep">
+		<td valign="top" colspan="2" style="width:200px;">April 2014</td>
+	</tr><tr class="dgAltItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_17" style="margin:2 2 2 2">9 April 2014<div class="InfoNew">New!</div></div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_17" style="margin:2 2 2 2">Second Dialogue Seminar on Scaling up Finance for Biodiversity<br><a href="/doc/?meeting=DS-FB-02">»&nbsp;Read more</a></div>
+            </td>
+	</tr><tr class="dgSep">
+		<td valign="top" colspan="2" style="width:200px;">May 2014</td>
+	</tr><tr class="dgItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_18" style="margin:2 2 2 2">22 May 2014</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_18" style="margin:2 2 2 2">International Day for Biological Diversity 2014<br><a href="https://www.cbd.int/idb/2014/">»&nbsp;Web Site</a></div>
+            </td>
+	</tr><tr class="dgSep">
+		<td valign="top" colspan="2" style="width:200px;">June 2014</td>
+	</tr><tr class="dgAltItem">
+		<td valign="top" class="EventTypeOther" style="width:200px;">
+            
+                
+                <div id="ctl06_W3345_dg_spanDates_19" style="margin:2 2 2 2">16 June 2014</div>
+            </td><td valign="top" class="EventTypeOther">
+                <div id="ctl06_W3345_dg_spanMeeting_19" style="margin:2 2 2 2"><b>Fifth meeting of the Ad Hoc Open-ended Working Group on Review of Implementation of the Convention</b></div>
+            </td>
+	</tr><tr>
+		<td class="EventTypeOther">&nbsp;</td><td class="EventTypeOther">&nbsp;</td>
+	</tr>
+</tbody></table>
+				</div>
+			</div>
+		</div>
+
+<?php include 'footer.php'; ?>

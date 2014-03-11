@@ -1,0 +1,189 @@
+<?php include 'header-inner.php'; ?>
+			<div class="col-lg-3 sidebar">
+				<?php include 'inner-nav.php'; ?>
+			</div>
+			<div class="col-lg-9">
+				<h1>Interlinked Diversity</h1>
+				<p>The past decades have seen a rise of interest in biological and cultural dimensions of diversity; the interactions between them; their connection to social and economic development; as well as their role in building resilience against natural and human induced change. This has resulted in increasing awareness of ‘inextricable links between biological and cultural diversity’, and the recognition of the crucial role that they plays in sustainable development and human well-being worldwide.</p>
+				<p style="color: red; font-weight:bold">For each category add Examples in the end and link to case studies filtered by that category</p>
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title bkg-1">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Languages and Linguistic Diversity</a>
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<h3>Language</h3>
+								<ul>
+									<li>Language is the key vehicle of knowledge. It captures, maintains and conveys information of local territories, species, ecosystems, landscapes, as well as their functioning and connection to local practices, livelihoods and well being. </li>
+									<li>Language is also vital in transmitting intangible cultural heritage, including oral traditions and expressions concerning nature, rites related to natural seasons and cycles, and celebrations of culturally and spiritually significant species, natural sites and locations.</li>
+									<li>When a language is lost, the associated ecological and cultural knowledge is lost with it. 	</li>
+								</ul>
+								<h3>Linguistic diversity</h3>
+								<ul>
+									<li>Diversity of languages embodies our cultural diversity and underpins exchange of views, renewal of ideas and broadening the capacity to describe and understand biodiversity and related processes.</li>
+									<li>Different language groups maintain the knowledge of respective regional landscapes, their key components and interactions between them.</li>
+									<li>Through the richness of linguistic diversity, local  knowledge, techniques, practices and innovations are maintained and passed on to new generations, supporting the cultural connection to the place and cultural elements inherited from common ancestors.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title bkg-2">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Material Culture</a>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h3>Objects created from or representing biodiversity</h3>
+								<ul>
+									<li>People engage with biodiversity through specific objects, which can be created from biodiversity components, or represent biodiversity. </li>
+									<li>People’s relationship to these objects and their perceived value are socially and culturally dependent. Understanding the different ways in which communities relate to, use and value such objects helps to understand how a particular culture is organized, functions and evolves over time. </li>
+									<li>Objects created from/ representing biodiversity also provide valuable information on the diverse use of biodiversity. They reflect the associated cultural and natural resource use practices, spiritual and religious beliefs, sources of aspirations and artistic expressions. They are also source of inspiration offering new perspectives for innovative, sustainable use of biodiversity.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title bkg-3">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Knowledge, Technology and Innovation</a>
+							</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse">
+							<div class="panel-body">
+								<h3>Knowledge (local, traditional and indigenous knowledge)</h3>
+								<ul>
+									<li>Local and indigenous communities possess sophisticated sets of knowledge, know-how and practices related to local biodiversity. </li>
+									<li>Developed over centuries of direct interaction with the local environment and based on long-standing observations and experience, such knowledge provides the basis for local-level decision-making about the use, management and conservation of both cultural and biological diversity. It underpins aspects of day-to-day life in fields like agriculture, fisheries, water collection and storage, health, horticulture, forestry, including the development of plant species and animal breeds.</li>
+									<li>Part and parcel of a cultural complex that encompasses intangible components, such as language, rituals, beliefs, spirituality and worldview, this culturally grounded, collectively owned and place-specific knowledge is highly dynamic and responsive to change.
+									<li>In form of stories, songs, folklore, proverbs, rituals and cultural practices, traditional and local knowledge is accumulated within a specific community and orally transmitted from generation to generation.</li> 
+								</ul>
+								<h3>Technology, techniques and innovation through practice and adaptation</h3>
+								<ul>
+									<li>Local communities and indigenous peoples have learned to adapt to local environment and to cope with its changes by developing a complex set of observations, experiences, practices and knowledge in close overlap with local social and cultural evolution. As a consequence, traditional and local knowledge results in technologies and techniques that are socially acceptable, and intimately linked to sustainable utilization and management of local natural resources.</li>
+									<li>Traditional technology and techniques are specific to a particular locality and of key importance for local livelihoods and well-being. The use of traditional techniques and technologies ranges   from gathering, preparation and conservation of food, domestication of crops, water management, adaptation to climate change, construction and maintenance of shelter; confection of clothing and tools, orientation and navigation on land and sea, traditional medicine, early warning systems.</li>
+									<li>Traditional knowledge is often combined with innovation in response to the changing environment and the subsequent local adaptive management. Innovation arises from the interaction of practices, customary laws, cultural and spiritual values and local landscapes and biodiversity. </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title bkg-4">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Modes of subsistence</a>
+							</h4>
+						</div>
+						<div id="collapseFour" class="panel-collapse collapse">
+							<div class="panel-body">
+							<h3>Resource based livelihoods</h3> 	
+<ul>
+	<li>The livelihoods of hundreds of millions of people around the world heavily depend on natural resources. </li>
+	<li>From agriculture to fisheries, forestry or pastoralism, people depend on natural resources and knowledge and practices related to their sustainable use and management to meet their basic needs and earn an income. </li>
+	<li>Both in rural and urban contexts, local management and governance practices relating to the use of natural resource result from complex interactions between economic and cultural forces that drive communities’ interactions with their local environment.</li>
+</ul>
+<h3>Land/sea use and management</h3>
+<ul>
+	<li>For generations, local communities and indigenous peoples have maintained vital economic, social and cultural ties to the land and the sea. </li>
+	<li>They have developed and employed a wide range of land/sea management practices and techniques as means of sustaining livelihoods while maintaining local biodiversity and cultural heritage. </li>
+	<li>By incorporating biological and cultural diversity in land/sea management practices, they have also created specific cultural sea and landscapes characterized by complex sea/land use systems and patterns which provide important economic benefits while sustaining high levels of biodiversity and enhancing local cultural heritage.</li>
+</ul>
+<h3>Plant/animal domestication and selective breeding</h3>
+<ul>
+	<li>Throughout history, people have not only used biodiversity, they have also created and maintained plant and animal varieties, landscape and seascape types, thus contributed to diversification at genetic, species and ecosystem levels.</li>
+	<li>Local and indigenous knowledge has been critical in the process of selective breeding which resulted in domestication of plant and animal species with genetic traits that benefit human needs, including production of food and commodities; transportation and protection; scientific research; decor and companionship. </li>
+	<li>This knowledge, skills and practices remain key in creation and maintenance of genetic diversity adapted to and appropriate for the local environment and culture.</li>
+</ul> 
+</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title bkg-5">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Social and Economic Relations</a>
+							</h4>
+						</div>
+						<div id="collapseFive" class="panel-collapse collapse">
+							<div class="panel-body">
+							<h3>Sense of identity and attachment to place</h3>
+<ul>
+	<li>As human cultures co-evolve with their environment, cultural identity and sense of belonging are strongly linked to local biodiversity and the relationships communities have with the surrounding land, sea, rivers, mountains, forests, lakes, animals and plants.</li>
+	<li>Cultural identity is often inscribed in natural places, such as cultural landscapes, national parks and sacred sites which embody local history and promote respect, interrelationship and responsibility of the past and present.</li>
+	<li>The distinctiveness of local biodiversity which, among others, leads to the development of specific local gastronomy and food products, as well as related knowledge, skills and practices also enhances attachment to place, sense of belonging and pride.</li>
+</ul> 
+
+<h3>Social roles in resource use, sharing and management</h3>
+<ul>
+	<li>Management of natural resources requires collective and collaborative action which is carried out by a number of actors and stakeholders each holding a specific role and related responsibility. </li>
+	<li>Within a community, different social structures, networks and roles associated with shared recourse use and management are often grounded in local culture and have been institutionalized in different forms of associations through land ownerships, clan or kin groups, traditional leadership, hunting, grazing, and fishing societies, women's groups, youth and religious groups.</li>
+	<li>Disruption of social constructions which underpin common resource use and management can empower or disempower particular groups affecting their livelihood concerns, causing further social disruptions and ecological degradation.</li>
+</ul>
+<h3>Gender considerations</h3>
+<ul>
+	<li>Historical division of labor between man and women has resulted in their different roles and knowledge related to biodiversity within their communities. </li>
+	<li>Women and man have specific needs, interests, aspirations, social and cultural functions hence make different contributions to the conservation and sustainable use of biodiversity. </li>
+	<li>Understanding of local gender relations and cultural dynamics can help mitigate the loss of important biological resources and related knowledge. </li>
+</ul>
+<h3>Political and economic relations and legal institutions</h3>
+<ul>
+	<li>Political and economic relations, including control over access to resources, sharing of benefits arising form their commercial use, partnerships based on resource trade, evaluations of economic values of biodiversity, or management of common property resources, are important aspects of biodiversity governance which is constantly shaped by and is shaping the links between biological and cultural diversity. </li>
+	<li>An important expression of the interconnectedness of biological and cultural diversity are customary laws which often combine provisions/norms relating to use of and access to natural resources, rights and obligations relating to land, conduct of spiritual life, maintenance of cultural heritage and knowledge systems.</li>
+	<li>To benefit form the positive and mutually reinforcing synergies between biological and cultural diversity, the full and effective participation of local communities and indigenous peoples in political, economic and institutional decision-making processes need to be ensured.  This is indispensable for development and implementation of holistic approaches that guarantee the protection of community rights, the respect for their customary laws and consideration of their worldviews.</li>
+</ul></div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title bkg-6">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Belief Systems</a>
+							</h4>
+						</div>
+						<div id="collapseSix" class="panel-collapse collapse">
+							<div class="panel-body">
+							<h3>Rites and rituals</h3>
+<ul>
+	<li>Rites, rituals and ceremonies are important cultural expressions that structure the lives of communities who practice them, reaffirm their identity as a group or a society and play a key role in their social, cultural and spiritual life. </li>
+	<li>As they mark the passing of seasons, events in the agricultural calendar, animal/plant productive cycles, healing practices or stages of a person’s life, many such events relate to and depend on the environment and local biodiversity, including the availability of particular species or the presence of specific sacred natural sites.</li>	
+</ul>
+
+<h3>Sacred natural sites</h3>
+<ul>
+	<li>Sacred natural sites are areas of land or water having special spiritual significance to peoples and communities. They can be perceived as areas where nature, connection to the greater universe, and collective or individual recollections come together in meaningful ways. They can be areas for ceremony and contemplation, prayer and meditation or source of inspiration and well-being. </li>
+	<li>An extended family, a clan, a tribe, a religious faith or entire nations may root their cultural identity in a specific sacred natural site. Due to the spiritual values attributed to these sites, human disturbance has been reduced or prevented, or careful management has taken place, often for long periods of time, with resulting high levels of biodiversity.</li>
+	<li>Due to their dual character as places of high biological and cultural value, these special places contribute meaningfully to both the conservation of biological diversity and the maintenance of cultural diversity.</li>
+</ul>
+
+<h3>Mythology, worldview, cosmology, and spirituality</h3>
+<ul>
+	<li>The diversity of the world’s mythologies, worldviews and cosmologies embodies the profound and complex nature of human-environment relationships. It also underpins the diversity of value systems and affects the ways people develop their identity and spirituality in relation to the natural world. </li>
+	<li>Nature and biodiversity play a key role in our overall perception of life, world and universe; in our interpretation of the origin and nature of the universe; and in the narratives explaining how the world or humankind came to be.</li>
+	<li>In some societies, people believe in a vital spiritual connection with an animal or a plant and construct their identity with and through the surrounding natural world.</li>
+</ul>
+</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title bkg-7">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Values</a>
+							</h4>
+						</div>
+						<div id="collapseSeven" class="panel-collapse collapse">
+							<div class="panel-body">
+<ul>
+	<li>Cultural values of biodiversity encompass aesthetic, spiritual, recreational, educational, inspirational values. They define peoples’ relations to biodiversity and are defined by culturally grounded and often intergenerational value and belief systems.</li>
+	<li>Biodiversity, on the other hand, is an invaluable source of intangible cultural heritage, intercultural exchange, creativity and innovation. It strongly influences cultural value systems and underlie many cultural practices and cultural traditions.</li> 
+	<li>Cultural value systems are an important factor that drives people’s interactions with biodiversity including its conservation strategies and sustainable use and management practices. </li>
+</ul>
+					</div>
+						</div>
+					</div>
+						</div>
+				</div>
+			</div>
+		</div>
+
+<?php include 'footer.php'; ?>

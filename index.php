@@ -1,0 +1,102 @@
+<?php include 'header.php'; ?>
+<div class="main-home-bkg">	
+<div class="container main-body ">
+ <div class="row"> 
+  <div class="col-lg-6">
+		<div class="main-home-message">
+			<p>Areas of high <a href="#" data-toggle="tooltip" rel="tooltip" data-placement="top" data-original-title="Encompasses all communities in the world, each of them with their own identity determined by ethnicity, history, language, religion and art. It includes inter alia diversity practices; ways of living together; value systems; knowledge; languages; and artistic expressions.">cultural diversity</a> are often areas of high <a href="#" data-toggle="tooltip" rel="tooltip" data-placement="top" data-original-title="The variability among living organisms from all sources, including inter alia terrestrial, marine and other aquatic ecosystems and the ecological complexes of which they are part; this includes diversity within species, between species and of ecosystems.">biological diversity</a>. The convergence between biological and cultural diversity extends far beyond the “hotspot” areas. Ensembles of biodiversity are developed, maintained and managed by cultural groups. Diversity of cultural practices depends upon specific elements of biodiversity for their existence and expression.</p>
+			<p>A <a href="http://dev.glebemedia.ca/cbd/cultural/step2.php" data-toggle="tooltip">paradigm shift</a> is needed to restore the integrity of diversity. A number of <a href="http://dev.glebemedia.ca/cbd/cultural/legal.php" alt="">international legal instruments</a> that deal with biodiversity and cultural diversity separately already exists. A more holistic approach is needed to jointly reverse the current trends of erosion of biodiversity and weakening of cultural diversity. That is why the <a href="#" alt="">Joint UNESCO- SCBD Programme on Links between Biological and Cultural Diversity</a> has been established.</p>
+		</div>
+  </div>
+  <div class="col-lg-6 home-right">
+		<div class="problem-container">
+			<div class="col-lg-4 problem-links">
+				<a href="step1.php" alt="">
+					<h3>Interlinked Diversity</h3>
+					<img src="img/prob-1-red1.png" alt=""/>
+				</a>
+			</div>
+			<div class="col-lg-4 problem-links">
+				<a href="step2.php" alt="">
+					<h3>Challenges & Opportunities</h3>
+					<img src="img/prob-1-red2.png" alt=""/>
+				</a>
+			</div>
+			<div class="col-lg-4 problem-links">
+				<a href="#" alt="">
+					<h3>The Way Forward</h3>
+					<img src="img/prob-1-red3.png" alt=""/>
+				</a>
+			</div>
+		</div>
+    <div class="col-lg-6 home-box">
+      <div class="semi-transparent">
+				<h3>Stories of the Month</h3>
+				<div class="float-left">
+					<a href="#" alt="">
+						<img src="img/story1.png" alt=""/>
+						<h4>Climate Change</h4>
+					</a>
+					<p>Curitiba, Brazil</p>
+				</div>
+				<div class="float-left">
+					<a href="#" alt="">
+						<img src="img/story2.png" alt=""/>
+						<h4>Climate Change</h4>
+					</a>
+					<p>Curitiba, Brazil</p>
+				</div>
+				<div class="clear"></div>
+      </div>
+    </div>
+    <div class="col-lg-6 home-box">
+     <div class="semi-transparent">
+				<h3>Tools for policymakers</h3>
+        <div>
+					<a href="#" alt="">
+						<h4>Policy Briefs</h4>
+					</a><br/>
+					<a href="#" alt="">
+						<h4>Indicators Toolkit</h4>
+					</a><br/>
+					<a href="#" alt="">
+						<h4>Management Guidelines</h4>
+					</a><br/>
+					<a href="#" alt="">
+						<h4>Facts and Figures</h4>
+					</a>
+				</div>
+      </div>
+    </div>
+    <!--
+			<div class="col-lg-12 problem-links policy-makers">
+				<div class="semi-transparent">
+					<a href="#" alt="">
+						<img src="img/mag.png" alt=""/>
+						<h2>What I need to know as a policy maker</h2>
+					</a>
+				</div>
+			</div>
+		-->
+  </div>
+</div>
+<!--
+<div class="row"> 
+  <div class="col-lg-12">
+    <div class="semi-transparent conventions-container">
+      <div class="book-conventions">
+        <a href="#" alt="">
+          <img src="img/book-conventions.png" alt=""/>
+          Convention on Biological Diversity<br/>
+          Convention Concerning the Protection of the World Cultural and Natural Heritage<br/>
+          Convention for the Safeguarding of Intangible Cultural Heritage<br/>
+          Convention on the Protection and Promotion of the Diversity of Cultural Expressions
+        </a>
+      </div>
+    </div>
+   </div>
+  </div>
+<-->
+</div>
+</div>
+<?php include 'footer.php'; ?>
