@@ -1,8 +1,8 @@
 'use strict';
 
-define([ /*'angular', 'angular-route', */ 'ui-utils'], function() {
+define([ /*'angular', 'angular-route', */], function() {
 
-	var app = require('angular').module('app', ['ngRoute', 'ng-breadcrumbs', 'ui.unique']);
+	var app = require('angular').module('app', ['ngRoute', 'ng-breadcrumbs']);
 
 	app.config(['$controllerProvider', '$compileProvider', '$provide', '$filterProvider',
 		function($controllerProvider, $compileProvider, $provide, $filterProvider) {
