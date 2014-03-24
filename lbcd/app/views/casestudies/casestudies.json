@@ -1,0 +1,82 @@
+﻿{
+  "responseHeader": {
+    "status": 0,
+    "QTime": 1,
+    "params": {
+      "fl": "id,title_t,summary_t,notes_s,url_ss",
+      "q": "(NOT version_s:* AND realm_ss:chm AND schema_s:caseStudy) AND ((*:* NOT securityRole_ss:*) OR (securityRole_ss:(\"Everyone\")  )) AND ((*:* NOT securityGroup_ss:*) OR (securityGroup_ss:(\"Everyone\") ))",
+      "wt": "json",
+      "rows": "25"
+    }
+  },
+  "response": {
+    "numFound": 1,
+    "start": 0,
+    "docs": [
+      {
+        "id": "52000000cbd0800000030fd8",
+        "notes_s": "37.339085, -121.8914807",
+        "title_t": "LBCD Test1",
+        "summary_t": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet nulla nec orci condimentum fermentum. Etiam blandit nulla nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus varius diam dictum, sodales sem id, fermentum est. Vivamus ac enim imperdiet, vulputate orci ut, dapibus ante. Praesent semper ipsum eget molestie lacinia. Aenean faucibus venenatis tortor at luctus. Nullam semper quam arcu, ac interdum velit convallis at. Nam sagittis condimentum dignissim. Nulla facilisi.",
+        "url_ss": [
+          "/api/v2013/documents/1FCB99E9-F926-1C4F-E867-A7EB0DD70E49/attachments/starfish.jpg"
+        ]
+      },
+      {
+        "id": "52000000cbd0800000030fd1",
+        "notes_s": "37.339085, -121.8914807",
+        "title_t": "LBCD Test2",
+        "summary_t": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet nulla nec orci condimentum fermentum. Etiam blandit nulla nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus varius diam dictum, sodales sem id, fermentum est. Vivamus ac enim imperdiet, vulputate orci ut, dapibus ante. Praesent semper ipsum eget molestie lacinia. Aenean faucibus venenatis tortor at luctus. Nullam semper quam arcu, ac interdum velit convallis at. Nam sagittis condimentum dignissim. Nulla facilisi.",
+        "url_ss": [
+          "/api/v2013/documents/1FCB99E9-F926-1C4F-E867-A7EB0DD70E49/attachments/starfish.jpg"
+        ]
+      },
+      {
+        "id": "52000000cbd0800000030fd2",
+        "notes_s": "37.339085, -21.8914807",
+        "title_t": "LBCD Test3",
+        "summary_t": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet nulla nec orci condimentum fermentum. Etiam blandit nulla nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus varius diam dictum, sodales sem id, fermentum est. Vivamus ac enim imperdiet, vulputate orci ut, dapibus ante. Praesent semper ipsum eget molestie lacinia. Aenean faucibus venenatis tortor at luctus. Nullam semper quam arcu, ac interdum velit convallis at. Nam sagittis condimentum dignissim. Nulla facilisi.",
+        "url_ss": [
+          "/api/v2013/documents/1FCB99E9-F926-1C4F-E867-A7EB0DD70E49/attachments/starfish.jpg"
+        ]
+      },
+      {
+        "id": "52000000cbd0800000030fd8",
+        "notes_s": "37.339085, -121.8914807",
+        "title_t": "LBCD Test4",
+        "summary_t": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet nulla nec orci condimentum fermentum. Etiam blandit nulla nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus varius diam dictum, sodales sem id, fermentum est. Vivamus ac enim imperdiet, vulputate orci ut, dapibus ante. Praesent semper ipsum eget molestie lacinia. Aenean faucibus venenatis tortor at luctus. Nullam semper quam arcu, ac interdum velit convallis at. Nam sagittis condimentum dignissim. Nulla facilisi.",
+        "url_ss": [
+          "/api/v2013/documents/1FCB99E9-F926-1C4F-E867-A7EB0DD70E49/attachments/starfish.jpg"
+        ]
+      },
+      {
+        "id": "52000000cbd0800000030fd8",
+        "notes_s": "37.339085, -121.8914807",
+        "title_t": "LBCD Test5",
+        "summary_t": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet nulla nec orci condimentum fermentum. Etiam blandit nulla nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus varius diam dictum, sodales sem id, fermentum est. Vivamus ac enim imperdiet, vulputate orci ut, dapibus ante. Praesent semper ipsum eget molestie lacinia. Aenean faucibus venenatis tortor at luctus. Nullam semper quam arcu, ac interdum velit convallis at. Nam sagittis condimentum dignissim. Nulla facilisi.",
+        "url_ss": [
+          "/api/v2013/documents/1FCB99E9-F926-1C4F-E867-A7EB0DD70E49/attachments/starfish.jpg"
+        ]
+      },
+      {
+        "id": "52000000cbd0800000030fd8",
+        "notes_s": "37.339085, -121.8914807",
+        "title_t": "LBCD Test6",
+        "summary_t": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet nulla nec orci condimentum fermentum. Etiam blandit nulla nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus varius diam dictum, sodales sem id, fermentum est. Vivamus ac enim imperdiet, vulputate orci ut, dapibus ante. Praesent semper ipsum eget molestie lacinia. Aenean faucibus venenatis tortor at luctus. Nullam semper quam arcu, ac interdum velit convallis at. Nam sagittis condimentum dignissim. Nulla facilisi.",
+        "url_ss": [
+          "/api/v2013/documents/1FCB99E9-F926-1C4F-E867-A7EB0DD70E49/attachments/starfish.jpg"
+        ]
+      },
+      {
+        "id": "52000000cbd0800000030fd8",
+        "notes_s": "37.339085, -121.8914807",
+        "title_t": "LBCD Test7",
+        "summary_t": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent laoreet nulla nec orci condimentum fermentum. Etiam blandit nulla nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus varius diam dictum, sodales sem id, fermentum est. Vivamus ac enim imperdiet, vulputate orci ut, dapibus ante. Praesent semper ipsum eget molestie lacinia. Aenean faucibus venenatis tortor at luctus. Nullam semper quam arcu, ac interdum velit convallis at. Nam sagittis condimentum dignissim. Nulla facilisi.",
+        "url_ss": [
+          "/api/v2013/documents/1FCB99E9-F926-1C4F-E867-A7EB0DD70E49/attachments/starfish.jpg"
+        ]
+      }      
+      
+    ]
+  }
+}

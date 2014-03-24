@@ -1,5 +1,5 @@
 {
-  "directory": "app/libs",
+  "directory": "lbcd/app/libs",
   "json": "bower.json",
   "storage": {
     "packages": ".bower-storage/cache",

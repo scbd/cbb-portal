@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cultural and Bioligical Biodiversity">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Cultural and Bioligical Biodiversity</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/lbcd/app/libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/lbcd/app/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/lbcd/app/css/cultural.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+
+    <style>[ng\:cloak], [ng-cloak], .ng-cloak { display: none !important; }
+    .map_image { display: block; width: 160px; height: 100px; position: relative; background-position: 0 0; background-repeat: no-repeat; }
+    .map_image .map_link { display: block; position: absolute; text-indent: -999em; overflow: hidden; }
+    .map_image #map_scbd  { width: 51px; height: 96px; top: 1px; left: 106px; }
+    .map_image #map_unesco { width: 102px; height: 97px; top: 1px; left: 1px; }
+    </style>
+
+</head>
+
+<body ng-controller="TemplateController" ng-class="{'logo-bkg':!homePage}">
+
+    <iframe id="authenticationFrame" src="https://accounts.cbd.int/app/authorize.html" style="display:none"></iframe>
+
+    <header class="header">
+        <!-- Fixed navbar -->
+        <div class="container jpbkg">
+            <div class="pull-right partner-logo-header">
+                <div class="map_image" style="background-image: url('/lbcd/app/images/partner-logo-header.png');">
+                    <a class="map_link" id="map_scbd" title="" href="http://www.cbd.int"></a>
+                    <a class="map_link" id="map_unesco" title="" href="http://www.unesco.org"></a>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="/lbcd"><img src="/lbcd/app/images/cultural-logo.png" alt="{{homePage}}"/></a>
+            </div>
+        </div> <!-- /container -->
+    </header>   
+
+    <div class="inner-body" ng-class="{'home-bkg':homePage, 'inner-bkg':!homePage}"> 
+        <div class="navbar inner-nav-container">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/lbcd">Home</a></li>
+                        <li class="dropdown"><a href="/lbcd/about" class="dropdown-toggle" xdata-toggle="dropdown" data-hover="dropdown" data-delay="500" data-close-others="false">About the Programme</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/lbcd/legal">International legal instruments </a></li>
+                                <li><a href="/lbcd/step1">Interlinked Diversity</a></li>
+                                <li><a href="/lbcd/step2">Challenges and opportunities</a></li>
+                                <li><a href="#">The Way forward</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/lbcd/partners">Partners</a></li>
+                        <li><a href="/lbcd/case-studies">Case Studies</a></li>
+                        <li><a href="/lbcd/resources">Resources</a></li>
+                        <li><a href="/lbcd/news">News</a></li>
+                        <li><a href="/lbcd/events">Events</a></li>
+                        <li><a href="http://www.cbd.int/contact/">Contact Us</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right nav-search" role="search" _lpchecked="1">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </form>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+
+        <div class="main-home-bkg"> 
+            <div class="container main-body">
+                <div class="row">
+                <div class="col-lg-3 sidebar" ng-show="showInnerMenu()">
+                    <ul class="nav">
+                        <li><a href="/lbcd/about">About the Programme</a>
+                            <ul>
+                                <li><a href="/lbcd/legal">International legal instruments </a></li>
+                                <li><a href="/lbcd/step1">Interlinked diversity</a></li>
+                                <li><a href="/lbcd/step2">Challenges and opportunities</a></li>
+                                <li><a href="#">The way forward</a></li>
+                            </ul>
+                        </li>
+                    </ul>       
+                </div>
+                <div ng-class="{'col-lg-9':showInnerMenu(), 'col-lg-12':!showInnerMenu()}">
+                    <ng-view></ng-view>
+                </div>
+
+
+            <!--
+            <div class="row"> 
+            <div class="col-lg-12">
+            <div class="semi-transparent conventions-container">
+            <div class="book-conventions">
+            <a href="#" alt="">
+            <img src="img/book-conventions.png" alt=""/>
+            Convention on Biological Diversity<br/>
+            Convention Concerning the Protection of the World Cultural and Natural Heritage<br/>
+            Convention for the Safeguarding of Intangible Cultural Heritage<br/>
+            Convention on the Protection and Promotion of the Diversity of Cultural Expressions
+            </a>
+            </div>
+            </div>
+            </div>
+            </div>
+            <-->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="pull-right partner-logo-header">
+                <img src="/lbcd/app/images/partner-logo-header.png"/>
+            </div>
+            <div class="navbar navbar-default">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/lbcd">Home</a></li>
+                    <li><a href="http://www.cbd.int/contact/">Contact Us</a></li>
+                    <!--<li><a href="#translate">Translate</a></li>
+                    <li><a href="#twitter">Twitter</a></li>
+                    <li><a href="#rss">RSS</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/lbcd/app/libs/requirejs/require.js" data-main="/lbcd/app/js/boot.js"></script>
+
+<!--     <xscript src="js/twitter-bootstrap-hover-dropdown.min.js"></xscript>
+    <xscript type="text/javascript">
+    $("body").tooltip({
+        selector: "a[rel=tooltip]"
+    });
+    </xscript>
+    <xscript src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></xscript>
+    <xscript src="js/bootstrap-image-gallery.min.js"></xscript> -->
+    
+</body>
+</html>

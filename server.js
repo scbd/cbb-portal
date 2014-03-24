@@ -17,15 +17,15 @@ app.configure(function() {
     app.use(express.logger('dev'));
     app.use(express.compress());
 
-    app.use('/app', express.static(__dirname + '/app'));
-    app.use('/favicon.png', express.static(__dirname + '/app/templates/favicon.png', { maxAge: oneDay }));
+    app.use('/lbcd/app', express.static(__dirname + '/lbcd/app'));
+    app.use('/favicon.png', express.static(__dirname + '/lbcd/app/template/favicon.png', { maxAge: oneDay }));
 });
 
 // Configure routes
 
 var proxy = httpProxy.createProxyServer({});
 
-app.get   ('/app/*'   , function(req, res) { res.send('404', 404); } );
+app.get   ('/lbcd/app/*'   , function(req, res) { res.send('404', 404); } );
 app.get   ('/public/*', function(req, res) { res.send('404', 404); } );
 
 app.get   ('/api/*', function(req, res) { proxy.web(req, res, { target: 'https://api.cbd.int', secure: false } ); } );
@@ -36,7 +36,7 @@ app.delete('/api/*', function(req, res) { proxy.web(req, res, { target: 'https:/
 // Configure index.html
 
 app.get('/*', function(req, res) {
-	fs.readFile(__dirname + '/app/template.html', 'utf8', function (error, text) {
+	fs.readFile(__dirname + '/lbcd/app/template/template.html', 'utf8', function (error, text) {
 		res.send(text);
 	});
 });

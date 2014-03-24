@@ -1,6 +1,6 @@
 {
-  "name": "lifeweb.cbd.int",
-  "description": "Lifeweb #",
+  "name": "lbcd.cbd.int",
+  "description": "LBCD",
   "dependencies": {
     "express": "~3.4.8",
     "http-proxy": "~1.0.2",
