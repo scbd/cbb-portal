@@ -22,12 +22,11 @@ require.config({
         'angular-route'        : { 'deps': ['angular'] },
         'bootstrap'            : { 'deps': ['jquery'] },
         'bootstrap-datepicker' : { 'deps': ['jquery'] },
-        'underscore'           : { 'exports': '_' },
-        'ng-breadcrumbs'       : { 'deps': ['angular'] }
+        'underscore'           : { 'exports': '_' }
     }
 });
 
-require(['angular', 'angular-route', 'bootstrap', 'ng-breadcrumbs', 'domReady', 'bootstrap-datepicker'], function (ng) {
+require(['angular', 'angular-route', 'bootstrap', 'domReady', 'bootstrap-datepicker'], function (ng) {
 
     // NOTE: place operations that need to initialize prior to app start here using the `run` function on the top-level module
 
