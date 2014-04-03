@@ -79,7 +79,7 @@
 
 
    <div id="list-view-container" class="container collapse">
-      <div class="list col-lg-8">
+      <div class="list col-lg-9">
          <!-- document start -->
         <ul class="pagination pull-right">
             <li ng-class="{disabled: currentPage == 0}">
@@ -93,101 +93,114 @@
             </li>
         </ul>
         <div class="clearfix"></div>
-          <div ng-repeat="document in documents">
 
-                    <!-- {{document}} -->
+        <div class="caseStudiesList">
+          <h2>Case Studies</h2>
+       
+              <div ng-switch on="document.schema">
 
-                        <div ng-switch on="document.schema">
+                  <ul class="media-list">
+                    <li class="media" ng-repeat="document in documents">
+                          <a class="pull-left" ng-href="https://chm.cbd.int/database/record?documentID={{document.identifier_s}}">
+                          <img style="width: 80px;" class="media-object" ng-src="{{document.url_ss[0]}}" alt="{{document.title}}"></a>
+                          <div class="media-body">
+                             <h4 class="media-heading">{{document.title}}</h4>
+                             <p>{{document.doc.summary_EN_t}}</p>
+                          </div>
+                          <div class="pull-right read-more"><a ng-href="https://chm.cbd.int/database/record?documentID={{document.identifier_s}}" >more &gt;&gt;</a></div>
+                       </li>
+                  </ul>
 
-                            <div ng-switch-default style="border-top:1px #ccc solid; 
-                               border-bottom:1px  #ccc solid;border-right:1px solid #ccc;"><!-- Example National Record  -->   
-                              <table style="width:100%;padding:0px;margin:0;background-color:#F4F8FA;">
-                                <tr>
-                                  <td rowspan="4" style="width:3px;background-color:#428bca;"></td>
-                                  <td colspan="2" style="padding:0 0 0 20px;margin:0;">
-                                    <span style="display:inline;line-height:10px;color:#333;font-weight:bold;text-transform:uppercase;padding:0;margin:0;">{{document.schema}} | 
-                                    <span style="color:#666;font-size:12px;font-weight:bold;" > {{document.source}} </span> 
-                                    </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                  <td style="margin:0;padding:0 0 0 20px;">
-                                    <i ng-class="{'glyphicon glyphicon-minus-sign':displayDetails, 'glyphicon glyphicon-plus-sign':!displayDetails}" style="font-size:11px;position:relative;top:-1px;"></i>
-                                     <a ng-click="load(document); displayDetails = !displayDetails" class="title">{{document.title}}</a> 
-                                  </td>
-                                 <!--  <td rowspan="4" style="width:5px;background-color:#999;padding:5px;margin:0;">V</td> -->
-                                </tr>
-                                <tr>
-                                  <td style="padding:20px; color:#999;">
-                                   {{document.description}}
-                                  <div ng-show="displayDetails" record-loader document="document.data"  ></div>
-                                  </td>
+                   <!-- style="border-top:1px #ccc solid;                      border-bottom:1px  #ccc solid;border-right:1px solid #ccc;"><! -Example National Record  -->   
+                    <!-- <table style="width:100%;padding:0px;margin:0;background-color:#F4F8FA;"> -->
+                      <!-- <tr>
+                        <td rowspan="4" style="width:3px;background-color:#428bca;"></td>
+                        <td colspan="2" style="padding:0 0 0 20px;margin:0;">
+                          <span style="display:inline;line-height:10px;color:#333;font-weight:bold;text-transform:uppercase;padding:0;margin:0;">{{document.schema}} | 
+                          <span style="color:#666;font-size:12px;font-weight:bold;" > {{document.source}} </span> 
+                          </span>
+                          </td>
+                      </tr> -->
+    <!--                   <tr>
+                        <td style="margin:0;padding:0 0 0 20px;">
+                          <i ng-class="{'glyphicon glyphicon-minus-sign':displayDetails, 'glyphicon glyphicon-plus-sign':!displayDetails}" style="font-size:11px;position:relative;top:-1px;"></i>
+                           <a ng-click="load(document); displayDetails = !displayDetails" class="title">{{document.title}}</a> 
+                        </td>
+                        <td rowspan="4" style="width:5px;background-color:#999;padding:5px;margin:0;">V</td> 
+                      </tr> -->
+<!--                       <tr>
+                        <td style="padding:20px; color:#999;">
+                         {{document.description}}
+                        <div ng-show="displayDetails" record-loader document="document.data"  ></div>
+                        </td>
 
-                                </tr>
-                              </table>
-                            </div> <!-- end national record -->
-                          <br>
-                        </div> <!-- end switch -->
+                      </tr>
+                    </table>
+                  </div> --> <!-- end national record -->
 
 
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <ul class="pagination pull-right">
-                        <li ng-class="{disabled: currentPage == 0}">
-                            <a href ng-click="actionSetPage(currentPage-1)">« Prev</a>
-                        </li>
-                        <li ng-repeat="n in range(pageCount)" ng-class="{active: n == currentPage}" ng-click="actionSetPage(n)">
-                            <a href>{{n+1}}</a>
-                        </li>
-                        <li ng-class="{disabled: currentPage >= pageCount - 1}">
-                            <a href ng-click="actionSetPage(currentPage+1)">Next »</a>
-                        </li>
-                    </ul>
-                </div>
+                <br>
+              </div> <!-- end switch -->
+
+
+        
+         
+          <div class="clearfix"></div>
+            <ul class="pagination pull-right">
+                <li ng-class="{disabled: currentPage == 0}">
+                    <a href ng-click="actionSetPage(currentPage-1)">« Prev</a>
+                </li>
+                <li ng-repeat="n in range(pageCount)" ng-class="{active: n == currentPage}" ng-click="actionSetPage(n)">
+                    <a href>{{n+1}}</a>
+                </li>
+                <li ng-class="{disabled: currentPage >= pageCount - 1}">
+                    <a href ng-click="actionSetPage(currentPage+1)">Next »</a>
+                </li>
+            </ul>
+          </div>
          <!-- document end -->
       </div>
+    </div>
   </div>
-   </div>
 </div>
 
   
 <script type="text/javascript">
-      function initialize() {
-        var myLatlng = new google.maps.LatLng(5.3609557,-75.2921219);
-        var mapOptions = {
-          center: myLatlng,
-          zoom: 2,
-          minZoom:2,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map-canvas2"),
-            mapOptions);
+      // function initialize() {
+      //   var myLatlng = new google.maps.LatLng(5.3609557,-75.2921219);
+      //   var mapOptions = {
+      //     center: myLatlng,
+      //     zoom: 2,
+      //     minZoom:2,
+      //     mapTypeId: google.maps.MapTypeId.ROADMAP
+      //   };
+      //   var map = new google.maps.Map(document.getElementById("map-canvas2"),
+      //       mapOptions);
             
-        var contentString = '<div id="content">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<div id="bodyContent">'+
-            '<h3 id="firstHeading" class="firstHeading"><a href="http://dev.glebemedia.ca/cbd/cultural/cs-detail.php">Zapara People</a></h3>'+
-            '<p>Oral heritage and cultural manifestations of the Zápara people. The Zápara people of the Amazon rainforest are inhabitants of one of the most bio-diverse areas of the world. They have elaborated an oral culture that is particularly rich as regards their understanding of the natural environment. </p>'+
-            '<p><a href="http://dev.glebemedia.ca/cbd/cultural/cs-detail.php">Learn More</a></p>'+
-            '</div>'+
-            '</div>';
+      //   var contentString = '<div id="content">'+
+      //       '<div id="siteNotice">'+
+      //       '</div>'+
+      //       '<div id="bodyContent">'+
+      //       '<h3 id="firstHeading" class="firstHeading"><a href="http://dev.glebemedia.ca/cbd/cultural/cs-detail.php">Zapara People</a></h3>'+
+      //       '<p>Oral heritage and cultural manifestations of the Zápara people. The Zápara people of the Amazon rainforest are inhabitants of one of the most bio-diverse areas of the world. They have elaborated an oral culture that is particularly rich as regards their understanding of the natural environment. </p>'+
+      //       '<p><a href="http://dev.glebemedia.ca/cbd/cultural/cs-detail.php">Learn More</a></p>'+
+      //       '</div>'+
+      //       '</div>';
 
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString,
-            maxWidth: 400
-        });   
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            map: map,
-            title: 'ASPROINCA Project',
-            show: true
-        });
-        //google.maps.event.addListener(marker, 'click', function() {
-          infowindow.open(map,marker);
-        //});
-      }
+      //   var infowindow = new google.maps.InfoWindow({
+      //       content: contentString,
+      //       maxWidth: 400
+      //   });   
+      //   var marker = new google.maps.Marker({
+      //       position: myLatlng,
+      //       map: map,
+      //       title: 'ASPROINCA Project',
+      //       show: true
+      //   });
+      //   //google.maps.event.addListener(marker, 'click', function() {
+      //     infowindow.open(map,marker);
+      //   //});
+      // }
 
   $("#list-view").on("click", function() {
     $("#map-canvas").removeClass('in');

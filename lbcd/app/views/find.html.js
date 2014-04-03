@@ -14,6 +14,8 @@ define(['app',
         var queryCanceler = null;
         var refreshTimeout = null;
 
+        $rootScope.homePage = false;
+
         //$scope.test = [{name:1},{name:2},{name:3},{name:4}];
         // this.xhr = null;
 
