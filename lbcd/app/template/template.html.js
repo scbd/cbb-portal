@@ -10,8 +10,6 @@ define(['app', 'authentication', '../views/inner.html'], function(app) {
                 return true; 
         };
 
-       
-
         //============================================================
         //
         //

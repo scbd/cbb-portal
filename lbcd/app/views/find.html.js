@@ -2,7 +2,7 @@
 
 define(['app', 
        // '../views/casestudies/casestudies.html.js',
-       'async!http://maps.google.com/maps/api/js?v=3.exp&sensor=false',
+       'async!//maps.google.com/maps/api/js?v=3.exp&sensor=false',
         './find_themes.partial.html.js',
         './find_schemas.partial.html.js',
         './find_countries.partial.html.js'
@@ -13,7 +13,6 @@ define(['app',
         var self = this;
         var queryCanceler = null;
         var refreshTimeout = null;
-        $scope.test = [];
 
         //$scope.test = [{name:1},{name:2},{name:3},{name:4}];
         // this.xhr = null;
@@ -264,8 +263,6 @@ define(['app',
                 
                 data.response.docs.forEach(function (document) {
                     $scope.documents.push(transformDocument(document));
-
-                    $scope.test = [{name:1},{name:2},{name:3},{name:4}];
                 });
 
                 $scope.pageCount = Math.ceil(data.response.numFound / $scope.itemsPerPage);
