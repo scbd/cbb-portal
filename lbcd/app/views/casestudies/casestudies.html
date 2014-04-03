@@ -2,12 +2,14 @@
 <!-- <script type="text/javascript" src="//google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer.js"></script>
 <script type="text/javascript" src="http://geoxml3.googlecode.com/svn/branches/polys/geoxml3.js"></script> -->
 
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>
-<script src="/lbcd/app/views/casestudies/casestudies.html.js"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>
+ -->
 
 <div class="row" ng-controller="CaseStudyController">
    <div class="map-container" id="view-container">
-      <div id="map-canvas" class="collapse in"></div>
+      <!-- <div id="map-canvas" class="collapse in"></div> -->
+      <div class="caseStudiesMap"></div>
+
       <div class="col-lg-3 filters-container">
          <div class="panel-group">
             <div class="toggle-map">
@@ -82,71 +84,7 @@
 
    <div id="list-view-container" class="container collapse">
       <div class="list col-lg-8">
-         <div class="caseStudies"></div>
-         <h2>Case Studies</h2>
-         <ul class="media-list">
-            <li class="media">
-               <a class="pull-left" href="#">
-               <img class="media-object" src="/lbcd/app/images/1.png" alt="Kagwene Gorilla Sanctuary">
-               </a>
-               <div class="media-body">
-                  <h4 class="media-heading">Kagwene Gorilla Sanctuary</h4>
-                  <p>The Kagwene Gorilla Sanctuary is currently being created at the eastern edge of the territory. Here, landscape mosaic would make it possible to consider different types of uses. It is currently being created at the eastern edge of the territory.</p>
-               </div>
-               <div class="pull-right read-more"><a href="#">more >></a></div>
-            </li>
-            <li class="media">
-               <a class="pull-left" href="#">
-               <img class="media-object" src="/lbcd/app/images/1.png" alt="Kagwene Gorilla Sanctuary">
-               </a>
-               <div class="media-body">
-                  <h4 class="media-heading">Kagwene Gorilla Sanctuary</h4>
-                  <p>The Kagwene Gorilla Sanctuary is currently being created at the eastern edge of the territory. Here, landscape mosaic would make it possible to consider different types of uses. It is currently being created at the eastern edge of the territory.</p>
-               </div>
-               <div class="pull-right read-more"><a href="#">more >></a></div>
-            </li>
-            <li class="media">
-               <a class="pull-left" href="#">
-               <img class="media-object" src="/lbcd/app/images/2.png" alt="Kagwene Gorilla Sanctuary">
-               </a>
-               <div class="media-body">
-                  <h4 class="media-heading">Kagwene Gorilla Sanctuary</h4>
-                  <p>The Kagwene Gorilla Sanctuary is currently being created at the eastern edge of the territory. Here, landscape mosaic would make it possible to consider different types of uses. It is currently being created at the eastern edge of the territory.</p>
-               </div>
-               <div class="pull-right read-more"><a href="#">more >></a></div>
-            </li>
-            <li class="media">
-               <a class="pull-left" href="#">
-               <img class="media-object" src="/lbcd/app/images/3.png" alt="Kagwene Gorilla Sanctuary">
-               </a>
-               <div class="media-body">
-                  <h4 class="media-heading">Kagwene Gorilla Sanctuary</h4>
-                  <p>The Kagwene Gorilla Sanctuary is currently being created at the eastern edge of the territory. Here, landscape mosaic would make it possible to consider different types of uses. It is currently being created at the eastern edge of the territory.</p>
-               </div>
-               <div class="pull-right read-more"><a href="#">more >></a></div>
-            </li>
-            <li class="media">
-               <a class="pull-left" href="#">
-               <img class="media-object" src="/lbcd/app/images/4.png" alt="Kagwene Gorilla Sanctuary">
-               </a>
-               <div class="media-body">
-                  <h4 class="media-heading">Kagwene Gorilla Sanctuary</h4>
-                  <p>The Kagwene Gorilla Sanctuary is currently being created at the eastern edge of the territory. Here, landscape mosaic would make it possible to consider different types of uses. It is currently being created at the eastern edge of the territory.</p>
-               </div>
-               <div class="pull-right read-more"><a href="#">more >></a></div>
-            </li>          
-         </ul>
-         <div class="pagination-centered">
-            <ul class="pagination">
-               <li><a href="#">&laquo;</a></li>
-               <li class="active"><a href="#">1</a></li>
-               <li><a href="#">2</a></li>
-               <li><a href="#">3</a></li>
-               <li><a href="#">4</a></li>
-               <li><a href="#">5</a></li>
-               <li><a href="#">&raquo;</a></li>
-            </ul>
-         </div>
+         <div class="caseStudiesList">{{controller}}</div>
       </div>
   </div>
    </div>

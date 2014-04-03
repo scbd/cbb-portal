@@ -1,10 +1,25 @@
-require('app').controller('HomePageController', ['$scope', '$rootScope', function ($scope, $rootScope) {
-	$scope.controller = "HomePageController";
+'use strict';
 
-	$rootScope.homePage = true;
-	$rootScope.portal = 'home';
+define(['app'], function(app) {
 
-}]);
+	return app.controller('HomePageController', ['$scope', '$rootScope', function ($scope, $rootScope) {
+
+			$scope.controller = "HomePageController";
+			$rootScope.homePage = true;
+			$rootScope.portal = 'cs';
+  
+  }]);
+
+});
+
+
+// require('app').controller('HomePageController', ['$scope', '$rootScope', function ($scope, $rootScope) {
+// 	$scope.controller = "HomePageController";
+
+// 	$rootScope.homePage = true;
+// 	$rootScope.portal = 'home';
+
+// }]);
 
 
 // 'use strict';

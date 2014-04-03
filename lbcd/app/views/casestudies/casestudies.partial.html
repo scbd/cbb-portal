@@ -1,18 +1,17 @@
 <h2>Case Studies</h2>
-{{documents}}
 
-<!-- <ul class="media-list">
-   <li class="mediaX" ng-repeat="document in documents">
+<ul class="media-list">
+   <li class="media" ng-repeat="document in documents">
       <a class="pull-left" ng-href="{{document.title_t}}">
-      <img class="media-object" ng-src="document.image" alt="{{document.title_t}}">
+      <img class="media-object" ng-src="{{document.url_ss[0]}}" alt="{{document.title_t}}">
       </a>
       <div class="media-body">
          <h4 class="media-heading">{{document.title_t}}</h4>
-         <p>{{document.description}}</p>
+         <p>{{document.summary_t}}</p>
       </div>
-      <div class="pull-right read-more"><a ng-href="{{document.url_ss}}">more >></a></div>
+      <div class="pull-right read-more"><a ng-href="{{document.url_ss[0]}}">more >></a></div>
    </li>            
-</ul> -->
+</ul>
 <!-- <div class="pagination-centered">
    <ul class="pagination">
       <li><a href="#">&laquo;</a></li>
@@ -24,3 +23,10 @@
       <li><a href="#">&raquo;</a></li>
    </ul>
 </div> -->
+
+<style>
+   .media-object {
+      height: 80px;
+      width:  80px;
+   }
+</style>

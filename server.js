@@ -25,8 +25,8 @@ app.configure(function() {
 
 var proxy = httpProxy.createProxyServer({});
 
-app.get   ('/lbcd/app/*'   , function(req, res) { res.send('404', 404); } );
-app.get   ('/public/*', function(req, res) { res.send('404', 404); } );
+app.get   ('/lbcd/app/*', function(req, res) { res.send('404', 404); } );
+app.get   ('/public/*',   function(req, res) { res.send('404', 404); } );
 
 app.get   ('/api/*', function(req, res) { proxy.web(req, res, { target: 'https://api.cbd.int', secure: false } ); } );
 app.put   ('/api/*', function(req, res) { proxy.web(req, res, { target: 'https://api.cbd.int', secure: false } ); } );
@@ -35,7 +35,7 @@ app.delete('/api/*', function(req, res) { proxy.web(req, res, { target: 'https:/
 
 // Configure index.html
 
-app.get('/*', function(req, res) {
+app.get('/lbcd*', function(req, res) {
 	fs.readFile(__dirname + '/lbcd/app/template/template.html', 'utf8', function (error, text) {
 		res.send(text);
 	});

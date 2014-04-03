@@ -1,0 +1,92 @@
+<div>
+
+  <div class="row">
+      <div class="col-xs-10" >
+        <span ng-click="statusFilter=null" class="btn btn-info"> 
+        <i ng-hide="statusFilter" class="glyphicon glyphicon-ok"></i> All <span class="badge badge-default">
+        {{(records | filter:schemaFilter).length}}</span></span>
+        <span ng-click="statusFilter=isRequest" class="btn btn-danger"> 
+        <i ng-show="statusFilter==isRequest" class="glyphicon glyphicon-ok"></i> Requests <span class="badge badge-default">{{(records | filter:schemaFilter | filter:isRequest).length}}</span></span>
+        <span ng-click="statusFilter=isPublished" class="btn btn-success"> 
+        <i ng-show="statusFilter==isPublished" class="glyphicon glyphicon-ok"></i> Published  <span class="badge badge-default">{{(records | filter:schemaFilter | filter:isPublished).length}}</span></span>
+        <span ng-click="statusFilter=isDraft" class="btn btn-default btn-draft" style="color:#fff">
+        <i ng-show="statusFilter==isDraft" class="glyphicon glyphicon-ok"></i> Draft  <span class="badge badge-default" style="color:#999">{{(records | filter:schemaFilter | filter:isDraft).length}}</span></span>
+        <input type="text" ng-model="keywords" placeholder=" Keyword " class="form-control keyword" style="width:160px;display:inline;">
+      </div>
+      <div class="col-xs-2 pull-right">
+        <span style="font-size: 16px; color: white;margin:0;padding:0;">
+        <a ng-click="newDoc(schema, null)" class="btn btn-primary"><span class="glyphicon glyphicon-plus-sign"></span> Add new</a></span>
+      </div>
+  </div>
+
+  <p></p>
+
+  <table ng-show="records" class="table table-striped">
+    <tr>
+      <th>ID</th>
+      <th>Summary</th>
+      <td colspan="2" class="text-right">{{filteredRecords.length}} record(s)</td>
+    </tr>
+
+    <tr ng-repeat="record in (filteredRecords = (records | filter:schemaFilter | filter:statusFilter | filter:keywords | orderBy:'-documentID'))">
+      <td>
+        <div>
+          <span ng-hide="record.documentID">[new]</span>
+          <a href="/database/record?documentID={{record.documentID}}">{{record.documentID}}</a>
+        </div>
+
+      </td>
+      <td>
+        <b>{{record.type|schemaName}}</b><br/>
+        {{(record.workingDocumentTitle||record.title)|lstring}}
+      </td>
+      <td class="text-right" style="vertical-align:middle">
+        <a ng-show="isPublished(record)" href="/database/record?documentID={{record.documentID}}" class="btn btn-xs btn-success" title="Published">P</a>
+        <a ng-show="isRequest(record)"   href="/register/tasks/{{getWorkflowID(record)}}" class="btn btn-xs btn-danger" title="Request">R</a>
+        <a ng-show="isDraft(record)"     ng-click="edit(record)" class="btn btn-xs btn-default btn-draft" title="Draft" style="color:#fff">D</a>
+      </td>
+      <td class="text-right" style="width:100px" >
+        <div class="btn-group">
+          <button type="button" class="btn btn-default" ng-click="edit(record)"><i class="fa fa-edit"></i></button>
+          <button type="button" class="btn btn-default" ng-click="askDelete(record)"><i class="fa fa-trash-o"></i></button>
+        </div>
+      </td>
+    </tr>
+
+  </table>
+
+
+
+  <div id="deleteRecordModel" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">What do you want to delete? <i ng-show="loading" class="fa fa-spinner fa-spin"></i></h4>
+        </div>
+        <div class="modal-body">
+
+          <div ng-show="isDraft(recordToDelete)" class="well">
+            <button type="button" class="btn btn-warning pull-right" ng-disabled="loading" ng-click="deleteDraft(recordToDelete)">Delete the draft</button>
+            <em>Draft {{recordToDelete.documentID||'[new]'}}</em>
+            <p><b>{{recordToDelete.workingDocumentTitle|lstring}}</b></p>
+            <p>{{recordToDelete.workingDocumentSummary|lstring}}</p>
+          </div>
+        
+          <div ng-show="isPublished(recordToDelete)" class="well">
+            <button type="button" class="btn btn-danger pull-right" ng-disabled="loading" ng-click="deleteRecord(recordToDelete)" data-toggle="tooltip" data-placement="top" title="Note: Any pending draft will also be deleted">Unpublish the record</button>
+            <em>Published record {{recordToDelete.documentID}}</em>
+            <p><b>{{recordToDelete.title|lstring}}</b></p>
+            <p>{{recordToDelete.summary|lstring}}</p>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->  
+
+
+</div>

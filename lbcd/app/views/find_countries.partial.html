@@ -1,0 +1,41 @@
+
+<div>
+	 <a ng-click="showSelect=!showSelect" class="filter-title" style="text-decoration:none;color:#111;">{{title | lstring:locale}}&nbsp; 
+        <i ng-class="{'fa fa-caret-down':!showSelect, 'fa fa-caret-up':showSelect}" ></i></a>
+    
+
+    <div class="list-group-item-expand">
+        <div ng-repeat="item in terms | orderBy:'title' | filter:{selected:true}" ng-class="ccc(item)" ng-click="onclick(this, $event)">
+            <div class="filter-selected truncate" style="cursor:pointer">
+                <i class="glyphicon glyphicon-remove-circle"></i> {{item.title | lstring:locale}} ({{item.count}})
+            </div>
+        </div>
+    </div>
+	<!--Save Dialog-->
+	 <div ng-show="showSelect" >
+        <div class="filter-options well" style="position:relative;left:-190px;width:700px;">
+
+				<div style="padding-left:20px">
+
+					<div class="pull-right" >
+                     <a ng-click="showSelect=!showSelect" style="text-decoration:none;" ><i class="glyphicon glyphicon-remove-circle"></i> Close</a>
+               </div>
+
+					<div style="padding-bottom:10px">
+						<a style="padding-right:10px" ng-repeat="letter in alphabet">{{letter}}</a>
+					</div>
+					<div style="height:400px;overflow-y:auto">
+						
+
+						<div class="col-lg-4 col-md-4 col-sm-4" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:200px;" ng-repeat="item in terms | orderBy:'title.en'">
+							<div class="checkbox" style="margin-top:2px;margin-bottom:2px">
+								<label class="country-options-title"><input type="checkbox" ng-model="item.selected" ng-change="refresh()"> {{item.title.en }} ({{item.count}} )</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+		</div>
+	</div>
+</div>

@@ -118,6 +118,4 @@ define(['app', 'authentication', '../views/inner.html'], function(app) {
 
   }]);
 
-
-
 });
