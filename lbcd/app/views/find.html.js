@@ -378,8 +378,9 @@ define(['app',
     //
     //
     //==================================================
-    app.directive('csMap', ['$window', '$http', function($window, $http) {
+    app.directive('csMap', ['$window',function($window) {
         var map;
+        var markers=[];
 
         function init(elem) {
 
@@ -390,75 +391,60 @@ define(['app',
           });
         }
 
+        function loadMarkers(docs) {
+
+            var createMarker = function (item){
+                    
+                var lat = parseFloat(item.doc.notes_s.split(',')[0]) || 0;
+                var lng = parseFloat(item.doc.notes_s.split(',')[1]) || 0;
+
+                var marker = new $window.google.maps.Marker({
+                    map: map,
+                    position: new $window.google.maps.LatLng(lat, lng),
+                    title: item.title
+                });
+                
+                marker.content = '<div class="infoWindowContent">' + item.doc.summary_EN_t + '</div>';
+                var infoWindow = new $window.google.maps.InfoWindow({ maxWidth: 400 }); 
+                var link = 'https://chm.cbd.int/database/record?documentID=' + item.doc.identifier_s 
+
+                $window.google.maps.event.addListener(marker, 'click', function(){
+                    infoWindow.setContent('<h3 class="firstHeading"><a href=\''+link+'\'>' + marker.title + '</a></h3>' + marker.content);
+                    infoWindow.open(map, marker);
+                });
+                
+                markers.push(marker);
+            }
+
+            for (var i = 0; i < docs.length; i++) {
+                createMarker(docs[i]);
+            }            
+        }
+
+        function clearMarkers() {
+            while(markers.length){
+                markers.pop().setMap(null);
+            }
+        }
 
         return {
           restrict: 'EAC',
           template: '<div id="map-canvas" class="collapse in"></div>',
           replace: true,
-
+          scope: { docs: '=' },
           link: function(scope, element, attrs, ctrl) {
             
             init(element.get(0));
 
-            var markers=[];
-            var loadMap = function () {
-
-                try
-                {
-                    var docs = JSON.parse(attrs.csMap);
-                    
-                    // clear markers  
-                    while(markers.length){
-                        markers.pop().setMap(null);
-                    }
-
-                    var createMarker = function (item){
-                            
-                        var lat = parseFloat(item.doc.notes_s.split(',')[0]);
-                        var lng = parseFloat(item.doc.notes_s.split(',')[1]);
-
-                        var marker = new $window.google.maps.Marker({
-                            map: map,
-                            position: new $window.google.maps.LatLng(lat, lng), //info.lat, info.long),
-                            title: item.title
-                        });
-                        
-                        marker.content = '<div class="infoWindowContent">' + item.doc.summary_EN_t + '</div>';
-                        var infoWindow = new $window.google.maps.InfoWindow({ maxWidth: 400 }); 
-                        var link = 'https://chm.cbd.int/database/record?documentID=' + item.doc.identifier_s 
-
-                        $window.google.maps.event.addListener(marker, 'click', function(){
-                            infoWindow.setContent('<h3 class="firstHeading"><a href=\''+link+'\'>' + marker.title + '</a></h3>' + marker.content);
-                            infoWindow.open(map, marker);
-                        });
-                        
-                        markers.push(marker);
-                    }
-
-                    for (var i = 0; i < docs.length; i++) {
-                        createMarker(docs[i]);
-                    }
+            scope.$watch('docs', function(currDocs) {
+                if(currDocs){
+                    clearMarkers();
+                    loadMarkers(currDocs);
                 }
-                catch(e)
-                {
-                   //alert('invalid json');
-                }
-            }
-
-            attrs.$observe('csMap', function() {
-                loadMap();
-           });
+            });
           }
         };
     }]); 
 
     return false;
 });
-
-
-
-
-
-
-
-

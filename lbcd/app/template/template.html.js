@@ -1,8 +1,17 @@
 'use strict';
-define(['app', 'authentication', '../views/inner.html'], function(app) {
+define(['app', 'jquery','authentication', '../views/inner.html', ], function(app) {
 
   app.controller('TemplateController', ['$scope', '$window', '$browser', '$document', '$location', 'authentication',
 	function($scope, $window, $browser, $document, $location, authentication) {
+
+        $("body").tooltip({ selector: "a[rel=tooltip]" });
+
+        $('.nav li.dropdown').hover(function() {
+            $(this).addClass('open');
+        }, function() {
+            $(this).removeClass('open');
+        });
+       
 
         $scope.showInnerMenu = function () { 
             if($location.path() == '/lbcd/about' || $location.path() == '/lbcd/step1' ||
