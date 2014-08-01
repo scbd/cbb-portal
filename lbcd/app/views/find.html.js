@@ -1,12 +1,13 @@
 'use strict';
 
-define(['app', 
-       // '../views/casestudies/casestudies.html.js',
-       'async!//maps.google.com/maps/api/js?v=3.exp&sensor=false',
-        './find_themes.partial.html.js',
-        './find_schemas.partial.html.js',
-        './find_countries.partial.html.js'
-        ],  function(app) {
+var dependencies = ['app', 
+                    'async!//maps.google.com/maps/api/js?v=3.exp&sensor=false', 
+                    './find_themes.partial.html.js',
+                    './find_schemas.partial.html.js', 
+                    './find_countries.partial.html.js'
+                   ];
+
+define(dependencies, function(app) {
 
      app.controller('FindController', ['$scope', '$rootScope', '$http', '$timeout', '$q', function ($scope, $rootScope, $http, $timeout, $q) {
         
@@ -381,6 +382,7 @@ define(['app',
     app.directive('csMap', ['$window',function($window) {
         var map;
         var markers=[];
+        var infoWindow;
 
         function init(elem) {
 
@@ -405,7 +407,7 @@ define(['app',
                 });
                 
                 marker.content = '<div class="infoWindowContent">' + item.doc.summary_EN_t + '</div>';
-                var infoWindow = new $window.google.maps.InfoWindow({ maxWidth: 400 }); 
+                infoWindow = new $window.google.maps.InfoWindow({ maxWidth: 400 }); 
                 var link = 'https://chm.cbd.int/database/record?documentID=' + item.doc.identifier_s 
 
                 $window.google.maps.event.addListener(marker, 'click', function(){
