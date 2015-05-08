@@ -1,0 +1,5 @@
+.git
+.bower-storage
+node_modules
+lbcd/app/libs
+app_OLD
