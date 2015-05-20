@@ -1,4 +1,4 @@
-Cultural and Bioligical Biodiversity Portal
-===========================================
+Linking Biological and Cultural Diversity
+=========================================
 
-https://www.cbd.int/cbb
+https://www.cbd.int/lbcd/
