@@ -2,6 +2,7 @@
   "name": "lbcd.cbd.int",
   "description": "LBCD",
   "dependencies": {
+    "bower": "1.5.2",
     "express": "3.15.x",
     "http-proxy": "~1.9.0"
   },
