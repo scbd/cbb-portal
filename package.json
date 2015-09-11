@@ -11,7 +11,7 @@
   },
   "engine": "node >= 0.10.18",
   "scripts": {
-    "postinstall": "./node_modules/.bin/bower install --config.interactive=false",
+    "postinstall": "./node_modules/.bin/bower install --config.interactive=false --allow-root",
     "start": "node server"
   }
 }
