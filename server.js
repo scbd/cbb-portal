@@ -27,11 +27,7 @@ var proxy = httpProxy.createProxyServer({});
 
 app.get   ('/lbcd/app/*', function(req, res) { res.send('404', 404); } );
 app.get   ('/public/*',   function(req, res) { res.send('404', 404); } );
-
-app.get   ('/api/*', function(req, res) { proxy.web(req, res, { target: 'https://api.cbd.int', secure: false } ); } );
-app.put   ('/api/*', function(req, res) { proxy.web(req, res, { target: 'https://api.cbd.int', secure: false } ); } );
-app.post  ('/api/*', function(req, res) { proxy.web(req, res, { target: 'https://api.cbd.int', secure: false } ); } );
-app.delete('/api/*', function(req, res) { proxy.web(req, res, { target: 'https://api.cbd.int', secure: false } ); } );
+app.all   ('/api/*',      function(req, res) { proxy.web(req, res, { target: 'https://api.cbd.int', secure: false } ); } );
 
 // Configure index.html
 
@@ -41,7 +37,15 @@ app.get('/lbcd*', function(req, res) {
 	});
 });
 
-// Start server
+// START HTTP SERVER
 
-console.log('Server listening on port ' + app.get('port'));
-server.listen(app.get('port'));
+app.listen(process.env.PORT || 2030, '0.0.0.0', function () {
+	console.log('Server listening on %j', this.address());
+});
+
+// Handle proxy errors ignore
+
+proxy.on('error', function (e,req, res) {
+    console.error('proxy error:', e);
+    res.status(502).send();
+});
