@@ -1,11 +1,11 @@
 {
-  "name": "lbcd.cbd.int",
+  "name": "lbcd-portal",
   "dependencies": {
-    "bower": "1.5.2",
-    "express": "3.15.x",
-    "http-proxy": "~1.9.0"
+    "bower": "1.8.0",
+    "express": "4.14.0",
+    "http-proxy": "1.15.2"
   },
-  "engine": "node >= 0.10.18",
+  "engine": "node >= 6.0.0",
   "scripts": {
     "postinstall": "./node_modules/.bin/bower install --config.interactive=false --allow-root",
     "start": "node server"

@@ -11,15 +11,8 @@ var app = express();
 var server = http.createServer(app);
 var oneDay = 24*60*60*1000;
 
-app.configure(function() {
-    app.set('port', process.env.PORT || 2030, '127.0.0.1');
-
-    app.use(express.logger('dev'));
-    app.use(express.compress());
-
-    app.use('/lbcd/app', express.static(__dirname + '/lbcd/app'));
-    app.use('/favicon.png', express.static(__dirname + '/lbcd/app/template/favicon.png', { maxAge: oneDay }));
-});
+app.use('/lbcd/app', express.static(__dirname + '/lbcd/app'));
+app.use('/favicon.png', express.static(__dirname + '/lbcd/app/template/favicon.png', { maxAge: oneDay }));
 
 // Configure routes
 
