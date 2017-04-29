@@ -19,9 +19,9 @@ deployment:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker tag output scbd/$CIRCLE_PROJECT_REPONAME:$CIRCLE_BRANCH
       - docker push scbd/$CIRCLE_PROJECT_REPONAME:$CIRCLE_BRANCH
-releases:
-   branch: /^release\/.*/
-   commands:
+  releases:
+    branch: /^release\/.*/
+    commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker tag output scbd/$CIRCLE_PROJECT_REPONAME:release-${CIRCLE_BRANCH//release\//}
       - docker push scbd/$CIRCLE_PROJECT_REPONAME:release-${CIRCLE_BRANCH//release\//}
